@@ -1,4 +1,6 @@
 //! TODO TODO: many traits, some difficulties with recursive types.
+//!
+//! the strategy to bound types is taken from parity-scale-codec, thanks to parity engineers.
 
 use proc_macro::TokenStream;
 
