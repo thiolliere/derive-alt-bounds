@@ -12,8 +12,7 @@ struct C<T: A>(T::B);
 Though bounding on recursive types is still not perfect, e.g for the type:
 ```rust
 #[derive(CloneTypBnds)]
-// It can't bound `where Vec<A<T>>: Clone` because compiler return error
-// `overflow evaluating the requirement...`
+// It can't bound `where Vec<A<T>>: Clone` because compiler return error `overflow evaluating the requirement...`
 struct A<T>(Vec<A<T>>, PhantomData<T>);
 ```
 
