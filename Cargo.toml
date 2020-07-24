@@ -1,0 +1,13 @@
+[package]
+name = "derive-alt-bounds"
+version = "0.1.0"
+authors = ["thiolliere <gui.thiolliere@gmail.com>"]
+edition = "2018"
+
+[lib]
+proc-macro = true
+
+[dependencies]
+proc-macro2 = "1.0.6"
+quote = "1.0.3"
+syn = { version = "1.0.7", features = ["full", "visit"] }
