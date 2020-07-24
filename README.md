@@ -17,3 +17,9 @@ struct A<T>(Vec<A<T>>, PhantomData<T>);
 ```
 
 Bounds for recursive type are still kind of WIP.
+
+# TODO:
+
+* consider using `synstructure` crate for finding types
+* allow user to choose the bounds strategy
+* maybe duplicate with `Derivative` crate
