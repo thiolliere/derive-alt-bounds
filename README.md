@@ -3,7 +3,9 @@ allow to derive Clone, Eq, Debug, PartialEq with better bounds than build-in one
 trait A {
 	type B;
 }
-#[derive(CloneTypBnds)] // Will derive Clone with where_clause: `where T::B: Clone`
+#[derive(CloneTypBnds)]
+// Will derive Clone with where_clause: `where T::B: Clone`
+// Instead of build-in derive Clone which bounds `T: Clone`
 struct C<T: A>(T::B);
 ```
 
